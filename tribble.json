@@ -1,0 +1,8 @@
+{
+  "port": 5678,
+  "health": {
+    "type": "http",
+    "path": "/healthz",
+    "start_period_secs": 120
+  }
+}
