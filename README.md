@@ -1,4 +1,4 @@
-# n8n-tribble
+# tribble-example-n8n
 
 [n8n](https://n8n.io) in queue mode on tribble: a main process, workers and a webhook
 processor from one image, with Postgres and Redis beside them.
