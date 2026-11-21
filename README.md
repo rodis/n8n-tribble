@@ -52,4 +52,6 @@ app its own hostname, so there are two ways to run it:
   Postgres, encrypted with `N8N_ENCRYPTION_KEY`. So the n8n apps need no volume and can run
   several replicas.
 - Code nodes run in n8n's built-in task runner, inside the same container.
+  They may use Node's `tls` module (`NODE_FUNCTION_ALLOW_BUILTIN` in the image) and no other
+  built-in, which is what a workflow needs to read a site's certificate.
 - To upgrade, change the tag in the `Dockerfile` and build all three apps.
